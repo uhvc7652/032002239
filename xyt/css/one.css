@@ -1,0 +1,106 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	background-image: url(../img/3.jpg);
+}
+
+.text {
+	display: inline-block;
+	background-color: gold;
+	margin-left: 35%;
+	font-family: '华文行楷';
+	font-size: 40px;
+	font-weight: bolder;
+	color: rgba(13, 13, 11, 0.722);
+}
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	font-family: '隶书';
+	font-size: 30px;
+	background-color: rgb(220, 76, 37);
+}
+
+.dice {
+	margin: 6px auto;
+	height: 100px;
+	width: 100px;
+}
+
+.box1 {
+	border:5px solid red;
+	display: inline-block;
+	position: relative;
+	margin-top: 66px;
+	margin-left: 10%;
+	text-align: center;
+	overflow: hidden;
+	list-style: none;
+	width: 350px;
+	height: 350px;
+	padding: 0px;
+}
+
+.box2 {
+	border:5px solid white;
+	float: right;
+	position: relative;
+	margin-top: 66px;
+	margin-right: 10%;
+	overflow: hidden;
+	list-style: none;
+	width: 350px;
+	height: 350px;
+	padding: 0px;
+}
+
+.box1 li {
+	width: 33.3333333%;
+	height: 33.333333%;
+	float: left;
+	background: rgb(162, 150, 41);
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box2 li {
+	width: 33.3333333%;
+	height: 33.333333%;
+	float: left;
+	background: rgb(171, 185, 49);
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#left {
+	position:absolute;
+	font-family: '隶书';
+	font-size: 300%;
+	left:30%;
+	color: rgb(255, 255, 255);
+}
+
+#right {
+	position:absolute;
+	margin-top: 10px;
+	font-family: '隶书';
+	font-size: 300%;
+	right:30%;
+	
+	color: rgb(255, 255, 255);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="./css/one.css">
+</head>
+
+<body>
+    <div id="left">0</div>
+    
+    <div id="right">0</div>
+    
+	<ul class="box1" id="box1">
+		<li><img src="./img/6.jpg" alt="" onclick="lay(1)" width="105px"
+			height="105px" class="chessleft" id="cl1"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(2)" width="105px"
+			height="105px" class="chessleft" id="cl2"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(3)" width="105px"
+			height="105px" class="chessleft" id="cl3"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(4)" width="105px"
+			height="105px" class="chessleft" id="cl4"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(5)" width="105px"
+			height="105px" class="chessleft" id="cl5"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(6)" width="105px"
+			height="105px" class="chessleft" id="cl6"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(7)" width="105px"
+			height="105px" class="chessleft" id="cl7"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(8)" width="105px"
+			height="105px" class="chessleft" id="cl8"></li>
+		<li><img src="./img/6.jpg" alt="" onclick="lay(9)" width="105px"
+			height="105px" class="chessleft" id="cl9"></li>
+	</ul>
+
+
+	<ul class="box2" id="box2">
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr1"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr2"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr3"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr4"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr5"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr6"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr7"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr8"></li>
+		<li><img src="./img/6.jpg" alt="" width="105px"
+			height="105px" class="chessright" id="cr9"></li>
+	</ul>
+	<div class="container">
+		<div class="row">
+			<div class="mx-auto mt-4 offset-2 col-8">
+				<span class="text">点击按钮来摇骰子</span>
+				<div class="dice m-auto">
+					<img src="images/1.jpg" id="dice_img" class="d-block w-100" />
+				</div>
+				<div class="w-100 text-center">
+					<button id="throw" class="btn" onclick="throwt()">摇骰子</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/jquery-1.7.2.min.js" defer></script>
+	<script src="./js/two.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rules</title>
+    <style>
+     img{
+        width: 999px;
+        height: 555px;
+        display: block;
+        margin: 0 auto;
+    
+     }
+     #last{
+        font-family: '隶书';
+        font-size: 300%;
+       
+        margin-left: 20%;
+        background-color: rgb(195, 189, 66);
+     }
+     #next{
+        font-family: '隶书';
+        font-size: 300%;
+        margin-left: 40%;
+        background-color: rgb(86, 134, 142);
+     }
+    
+     
+     
+     
+    </style>
+
+</head>
+
+<body>
+    
+    <img src="./rules/01.初始盘面.png" >
+    <button id="last">上一页</button>
+    <button id="next">下一页</button>
+    
+    <script>
+       
+       var img=document.getElementsByTagName('img')[0];
+       var last=document.getElementById('last');//获取按钮
+       var next=document.getElementById('next');//获取按钮 
+       var arr = ['rules/01.初始盘面.png','./rules/02.轮流掷骰.png','rules/03.消除规则.png','rules/04.结算规则.png']
+       var index = 0;;
+       var count=4;
+        last.onclick = function(){
+        // 切换到上一张，索引自减
+        index--;
+
+        //判断index是否小于0
+        if(index < 0){
+            index = arr.length - 1;
+        }
+        img.src = arr[index];
+   
+    }
+    next.onclick = function(){
+        //切换到下一张，索引自增
+        index++;
+
+        //判断index是否大于imgArr.length - 1
+        if(index > arr.length - 1){
+            index = 0;
+        }
+        img.src = arr[index];
+    
+      
+    }
+    </script>
+    
+   
+</body>
+</html>

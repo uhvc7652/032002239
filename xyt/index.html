@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逍遥骰</title>
+    <style>
+        body {
+            background-image: url(./img/1.jpg);
+        }
+        .box{
+		   margin:20px auto; /*设置元素外边距*/
+		   text-align: center;
+		}
+		.shine{
+            font-family:'华文隶书';
+		   font-size:100px; /*设置字体大小*/
+		   font-weight:bolder; /*设置字体粗细*/
+		   color:rgb(134, 141, 71); /*设置文字颜色*/
+		   cursor:pointer; 
+		   -webkit-animation:light 1.5s ease-in-out infinite alternate;/*设置动画*/
+		}
+		@-webkit-keyframes light{/*创建动画*/
+		   from{
+		       text-shadow:0 0 10px rgb(161, 150, 85)
+		                      0 0 20px rgb(58, 96, 147),
+		                      0 0 30px #fff,
+		                      0 0 40px rgb(183, 79, 41),
+		                      0 0 70px #0d659c,
+		                      0 0 80px #ae223e,
+		                      0 0 100px #00ffc8,
+		                      0 0 150px #0000FF;
+		   }
+		   to{
+		       text-shadow:0 0 5px #fff,
+		                      0 0 10px gold,
+		                      0 0 15px gold,
+		                      0 0 20px #0d659c,
+		                      0 0 35px #ae223e,
+		                      0 0 40px #0d659c,
+		                      0 0 50px #d31616,
+		                      0 0 75px #4c9333;
+		   }
+
+		}
+        .box1{
+		   font-family:"华文行楷";            /*设置字体*/
+		   width:600px;                    /*设置元素宽度*/
+		   background:rgb(178, 137, 55);
+		   margin:50px auto;                /*设置外边距*/
+		   font-size: 66px;                /*设置文字大小*/
+		   color:rgb(200, 34, 34);                    /*设置文字颜色*/
+		   overflow:hidden;                
+		}
+        .marquee{
+            position:absolute;
+
+            bottom:0;
+            left: 40px;
+            padding:0;
+            margin:0;
+		   -webkit-animation: marquee 5s linear infinite alternate;/*设置动画*/
+		}
+		@-webkit-keyframes marquee{        /*创建动画*/
+		    0%{ left:0px; }
+		    100%{ left:200px; }
+		}
+.button {
+  display: block;
+  border-radius: 4px;
+  background-color: #38968c;
+  border: none;
+  color:#050b03;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 6px auto;
+  position:relative;
+
+left: 0%;
+}
+
+.button span {
+    font-family: '华文行楷';
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  background-color: rgb(113, 114, 76);
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+       
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1 class="shine">逍遥骰</h1>
+    </div>
+
+    <div class="box1">
+        <p class="marquee">逍遥江湖 一决胜负 够胆你就来！</p>
+    </div>
+
+   <button class="button" onclick="window.location.href ='one.html'">
+    <span>双人对战</span>
+  </button>
+  <button class="button" onclick="window.location.href ='two.html'">
+    <span>人机对战</span>
+  </button>
+  <button class="button" onclick="window.location.href ='rule.html'">
+    <span>游戏规则</span>
+  </button>
+  
+   <!-- <button class="button" style="vertical-align:middle"><span>Hover </span></button> -->
+  
+</body>
+</html>
